@@ -1,0 +1,3 @@
+/etc/hostname
+
+#to change it permanently we need to modify etc/hostname and change the name there.

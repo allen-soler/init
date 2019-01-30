@@ -1,0 +1,3 @@
+#graphic session : we open 	Virtual box, we launch our vm and then we log.
+#To change user : we open the terminal and type su - "user" and password.
+#using terminal : ssh  user@ip and password.

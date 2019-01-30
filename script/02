@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pkill -f $1
+deluser $1
+exit

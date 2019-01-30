@@ -1,0 +1,1 @@
+ifconfig | grep "ether" | sed -e '3, 8d' | sed -e '1, 1d' | cut -c 8-

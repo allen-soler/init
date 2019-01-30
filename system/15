@@ -1,0 +1,2 @@
+pkill
+#Kill $(jobs -p)

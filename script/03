@@ -1,0 +1,22 @@
+#!/bin/bash
+PS3='Please enter your choice: '
+options=("Oh my ZSH installation" "vimrc installation" "Quit")
+select opt in "${options[@]}"
+do
+	case $opt in
+		"Oh my ZSH installation")
+			echo "Installing oh my ZSH!"
+			sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+			;;
+		"vimrc installation")
+			echo "Installing my vimrc settings"
+			git clone https://github.com/allen-soler/vimrc.git v_settings
+			cp v_settings/.vimrc ~
+			echo "deleting files"
+			rm -rf v_settings
+			;;
+		"Quit")
+			break
+			;;
+	esac
+done
